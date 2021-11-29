@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LAB1</title>
+
+
+</head>
+
+<body>
+<h1> FORM </h1>
+<form>
+<fieldset>
+	<!-- NAME -->
+	<label for ="name" >NAME :</label><br>
+	<input type ="text" id ="name" name = "name" placeholder ="Please enter your name" required maxlength="25" size ="25"><br><br>
+
+	<!-- EMAIL -->
+	<label for ="email">EMAIL :</label><br>
+	<input type ="text" id ="email" name ="email" placeholder="test@example.com" required autofocus><br><br>
+	
+	<!--Password -->
+	<label for  ="pwd">Password :</label><br>
+	<input type ="password" id ="pwd" name ="pwd" required minlength="6"><br><br>
+</fieldset>
+	
+	<!-- Category, drop down-->
+	<label for ="category">Category :</label><br>
+	<select id ="category" name =" category" required>
+		<option value ="student">STUDENT</option>
+		<option value ="employee">EMPLOYEE</option>
+		<option value ="freelancer" selected>FREELANCER</option>
+	</select><br><br>
+
+	<!-- Date -->
+	<label for ="event">Event Date :</label><br>
+	<input type ="date" name ="event" required><br><br>
+
+	<!--TICKETS-->
+	<label for ="ticket">Tickets</label><br>
+	<input type ="radio" name ="ticket" value ="ticket1" required>TICKET 1
+	<input type ="radio" name ="ticket" value ="ticket2"checked>TICKET 2
+	<input type ="radio" name ="ticket" value ="ticket3">TICKET 3<br><br>
+	
+	<!--CHECKBOX-->
+	<label for ="payment">Payment</label><br>
+	<input type ="checkbox" name ="payment" value ="payment" required>Online Payment<br><br>
+	
+	<!--Notes -->
+	<label for ="notes">Notes</label><br>
+	<textarea rows ="5" cols ="50" name="notes" placeholder="Enter the Notes"></textarea><br><br>
+
+	<!--SUBMIT BUTTON -->
+	<input type ="submit" name ="submit" value="SUBMIT"/>
+	<input type ="reset" name ="reset" value="RESET"/>
+
+</form>
+</body>
+</html>
